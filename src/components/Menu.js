@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-
+import { withRouter } from 'react-router-dom';
 const navs = [
     {
         nav_name: 'Events',
@@ -24,7 +24,7 @@ const navs = [
     },
 ]
 
-export default class Menu extends Component {
+class Menu extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -37,24 +37,28 @@ export default class Menu extends Component {
         console.log(props);
         console.log(state);
         return {
-          open:props.open
+            open: props.open
         }
-      }
+    }
     closeM = () => {
         this.props.closed();
     }
+
 
     render() {
         let style = '0%';
         if (this.state.open) {
 
-                style= '100%'
-            
+            style = '100%'
+
         }
         console.log(this.state.open)
         let nav_ui = navs.map((nav, key) => {
             return (
-                <Col className="nav-box p-1" xs={12} md={4} key={key}>
+                <Col onClick={() => {
+                    this.props.history.push(nav.nav_link);
+                    this.closeM();
+                }} className="nav-box p-1" xs={12} md={4} key={key}>
                     <div className="nav-center text-center">
                         <h2>{nav.nav_name}</h2>
                     </div>
@@ -78,3 +82,5 @@ export default class Menu extends Component {
         )
     }
 }
+
+export default withRouter(Menu);
