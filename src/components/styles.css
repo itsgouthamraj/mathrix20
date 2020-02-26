@@ -43,9 +43,22 @@
     color: white;
 }
 
+.expand-bar{
+    position: fixed;
+    top:9px;
+    right: 10px;
+   
+}
+
+.exp{
+    font-size:25px;
+    color:white;
+    cursor: pointer !important;
+}
+
 .mtext{
     position: relative;
-    top: 15px;
+    top: 25px;
     width: 100%;
     text-align: center;
 }
