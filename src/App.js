@@ -34,9 +34,9 @@ export default class App extends Component {
         return (
             <>
                 <Menu closed={this.closeExpand} open={this.state.isMenuOpened} />
-                <div className="expand-bar">
+                {this.state.isMenuOpened ? <></> :<div className="expand-bar">
                     <i className="exp fas fa-bars" onClick={this.handleExpand}></i>
-                </div>
+                </div>}
                 <div className="logo-container">
                     <div>
                         <img alt="mathrix header" src={logo} className="lheader" height={300} />
