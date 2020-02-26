@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import MarchAnna from './components/MarchAnna';
-import logo from './assets/mathrix_logo.svg';
+import MainPage from './components/MainPage';
 import Menu from './components/Menu';
+import Events from './components/Events';
+import {Switch,Route} from 'react-router-dom';
 
 
 export default class App extends Component {
@@ -37,15 +38,11 @@ export default class App extends Component {
                 {this.state.isMenuOpened ? <></> :<div className="expand-bar">
                     <i className="exp fas fa-bars" onClick={this.handleExpand}></i>
                 </div>}
-                <div className="logo-container">
-                    <div>
-                        <img alt="mathrix header" src={logo} className="lheader" height={300} />
-                    </div>
-                    <div className="mtext">
-                        <div className="mt">MATHRIX</div>
-                    </div>
-                </div>
-                <MarchAnna />
+                <Switch>
+                <Route path="/" component={MainPage} exact />
+                <Route path="/events" component={Events} exact />
+                </Switch>
+                
             </>
         )
     }

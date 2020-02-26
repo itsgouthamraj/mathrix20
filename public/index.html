@@ -19,13 +19,15 @@
       margin: 0px;
       background-size: cover;
       background-repeat: no-repeat;
-
+      overscroll-behavior-y: contain;
     }
 
    
   </style>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r58/three.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
  
 </head>
 
@@ -33,6 +35,21 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root" style="z-index: 99;"></div>
 </body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
+<script id="rendered-js">
+var swiper = new Swiper('.blog-slider', {
+  spaceBetween: 30,
+  effect: 'fade',
+  loop: true,
+  mousewheel: {
+    invert: false },
+
+  // autoHeight: true,
+  pagination: {
+    el: '.blog-slider__pagination',
+    clickable: true } });
+//# sourceURL=pen.js
+    </script>
 <script>
   var hotbod = document.querySelector("body");
 
