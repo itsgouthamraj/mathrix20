@@ -116,6 +116,7 @@ span {
     font-size:25px;
     color:white;
     cursor: pointer !important;
+    transition: ease-in 0.5s;
 }
 
 .mtext{
@@ -143,17 +144,19 @@ span {
     left: 0;
     bottom: 0;
     height: 100%;
-    width: 100%;
+    width: 0;
     background-color: black;
     color: white;
     z-index: 99999;
-    overflow-y: scroll;
+    overflow:hidden;
+    transition: 0.5s;
 }
 
 .nav-center{
     height: 150px;
-    vertical-align: middle;
-    display: table-cell;
+    padding-top: 20px;
+    cursor: pointer;
+    
     
     text-align: center;
     padding: 5px;
@@ -170,3 +173,14 @@ span {
     background-color: #fc0;
     color: white;
 }
+
+@media (max-width: 576px) { 
+    .menu-overlay{
+        overflow-y: scroll;
+    }
+    .nav-center{
+        
+        padding-top: 30px;
+    }
+
+ }
