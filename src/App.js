@@ -7,6 +7,7 @@ export default class App extends Component{
         return (
             <>
             <div className="logo-container">
+                <h1 className="mtext">MATHRIX 20</h1>
                 <img src={logo} className="lheader" height={300}/>
                 
             </div>
