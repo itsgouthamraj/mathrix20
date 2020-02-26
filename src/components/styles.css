@@ -45,7 +45,7 @@
 
 .mtext{
     position: relative;
-    bottom: 5px;
+    top: 15px;
     width: 100%;
     text-align: center;
 }
@@ -57,8 +57,8 @@
     position: absolute;
     max-height:15cm;
     max-width:15cm;
-    width: 40%;
-    height: 40%;
+    width: 45%;
+    height: 45%;
 }
 
 .animate .ks {
