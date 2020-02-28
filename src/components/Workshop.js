@@ -10,7 +10,7 @@ const w = [
       category: 'Workshop',},
       {
         name: 'IoT Paper to Prototype',
-        description: '"If you think that the internet has changed your life, think again. The Internet of Things is about to change it all over again". It’s a digital pulse made up of data that we can aggregate to improve the world around us. REGISTER to understand the pulse of digital world.'
+        description: '"If you think that the internet has changed your life, think again. The Internet of Things is about to change it all over again". It’s a digital pulse made up of data that we can aggregate to improve the world around us. REGISTER to understand the pulse of digital world.',
         image: iot,
         category: 'Workshop',}
     ];
