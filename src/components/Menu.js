@@ -10,18 +10,6 @@ const navs = [
         nav_name: 'Workshops',
         nav_link: '/workshops',
     },
-    {
-        nav_name: 'Login',
-        nav_link: '/login',
-    },
-    {
-        nav_name: 'Profile',
-        nav_link: '/profile',
-    },
-    {
-        nav_name: 'Contact Us',
-        nav_link: '/contact',
-    },
 ]
 
 class Menu extends Component {
@@ -55,7 +43,7 @@ class Menu extends Component {
         let nav_ui = navs.map((nav, key) => {
             return (
                 <Col onClick={() => {
-                    this.props.history.push(nav.nav_link);
+                    window.location = 'https://www.mathrix.in'+nav.nav_link;
                     this.closeM();
                 }} className="nav-box p-1" xs={12} md={4} key={key}>
                     <div className="nav-center text-center">
