@@ -34,10 +34,10 @@ class Menu extends Component {
 
 
     static getDerivedStateFromProps(props, state) {
-        console.log(props);
-        console.log(state);
-        return {
-            open: props.open
+        if(state.open !== props.open){
+            return {
+                open: props.open
+            }
         }
     }
     closeM = () => {
@@ -52,7 +52,6 @@ class Menu extends Component {
             style = '100%'
 
         }
-        console.log(this.state.open)
         let nav_ui = navs.map((nav, key) => {
             return (
                 <Col onClick={() => {
