@@ -47,7 +47,7 @@ class Register extends Component {
 
     PAY = async () => {
         const response = await axios.post(
-            "http://localhost:5000/register",
+            "https://api.mathrix.in/register",
             {
                 student_name: this.state.student_name,
                 college_name: this.state.college_name,
