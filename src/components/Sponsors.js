@@ -4,7 +4,7 @@ import poorvika from '../assets/poorvika.png';
 import adsprint from '../assets/adsprint.png';
 import uniq from '../assets/uniq.jpg';
 import cottonhouse from '../assets/cottonhouse.png';
-import aws from '../assets/awsc.jfif';
+import aws from '../assets/awsche.png';
 import rajam from '../assets/rajam.png';
 
 class Sponsor extends Component {
