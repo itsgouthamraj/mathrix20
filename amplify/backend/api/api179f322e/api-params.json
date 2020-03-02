@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/v1",
+            "lambdaFunction": "mathrix2077eaf7c2",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "api179f322e",
+    "apiName": "api179f322e",
+    "functionArns": [
+        {
+            "lambdaFunction": "mathrix2077eaf7c2"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-mathrix20-prod-31856-authRole",
+        "unAuthRoleName": "amplify-mathrix20-prod-31856-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "mathrix2077eaf7c2",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

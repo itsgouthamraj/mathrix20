@@ -1,0 +1,20 @@
+{
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-mathrix20-prod-31856-authRole",
+            "UnauthRoleArn": "arn:aws:iam::645855842507:role/amplify-mathrix20-prod-31856-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::645855842507:role/amplify-mathrix20-prod-31856-authRole",
+            "Region": "ap-south-1",
+            "DeploymentBucketName": "amplify-mathrix20-prod-31856-deployment",
+            "UnauthRoleName": "amplify-mathrix20-prod-31856-unauthRole",
+            "StackName": "amplify-mathrix20-prod-31856",
+            "StackId": "arn:aws:cloudformation:ap-south-1:645855842507:stack/amplify-mathrix20-prod-31856/ab013470-5ccf-11ea-9102-0695265dabc8",
+            "AmplifyAppId": "d14ajnboaijf7c"
+        },
+        "categories": {
+            "function": {
+                "mathrix2077eaf7c2": {}
+            }
+        }
+    }
+}
