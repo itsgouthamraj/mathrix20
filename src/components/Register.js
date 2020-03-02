@@ -43,6 +43,11 @@ class Register extends Component {
         }
     }
 
+    PAY = () => {
+        alert('Payment Gateway is currently busy . Please try again after some time');
+        return false;
+    }
+
     render() {
 
         // let bn = '';
@@ -190,7 +195,7 @@ class Register extends Component {
                                         <Row>
                                             <Col md={{ size: 6, offset: 3 }}>
                                                 <small style={{ color: 'red' }}>* Discounts will be refunded on the day of the event</small><br />
-                                                {am === 0 ? <Button onClick={this.preview} color="primary" disabled className="btn-block">Pay ₹ - {am}</Button> : <Button onClick={this.preview} color="primary" className="btn-block">Pay ₹ - {am}</Button>}
+                                                {am === 0 ? <Button onClick={this.PAY} color="primary" disabled className="btn-block">Pay ₹ - {am}</Button> : <Button onClick={this.preview} color="primary" className="btn-block">Pay ₹ - {am}</Button>}
 
                                             </Col>
                                         </Row>
