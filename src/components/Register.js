@@ -99,7 +99,7 @@ class Register extends Component {
                 <div className="e-c">
                     <div className="blog-slider events-box" style={{ backgroundColor: 'transparent' }}>
                         <Row>
-                            <Col md={{ size: 8, offset: 2 }} style={{ paddingTop: '30px', paddingBottom: '30px' }}>
+                            <Col md={{ size: 8, offset: 2 }}>
                                 <Card body style={{ backgroundColor: '#F2E3E7', borderColor: '#333' }}>
                                     <CardHeader tag="h3" className="text-center">Student Registration</CardHeader>
                                     <CardBody>
