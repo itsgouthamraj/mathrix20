@@ -99,7 +99,7 @@ class Register extends Component {
         return (
             <>
                 <div className="efix">
-                    <div className="mt">RESGISTRATION</div>
+                    <div className="mt">REGISTRATION</div>
                 </div>
                 <div className="e-c">
                     <div className="blog-slider events-box" style={{ backgroundColor: 'transparent' }}>
