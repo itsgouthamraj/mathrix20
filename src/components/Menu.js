@@ -15,6 +15,10 @@ const navs = [
         nav_link: '/workshops',
     },
     {
+        nav_name: 'Register',
+        nav_link: '/register',
+    },
+    {
         nav_name: 'About Us',
         nav_link: '/about',
     },

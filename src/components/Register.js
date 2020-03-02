@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 
-import { Container, Row, Col,Card,CardHeader,CardBody,Button, Input, InputGroup, FormGroup, Form, Label } from 'reactstrap';
+import { Container, Row, Col, Card, CardHeader, CardBody, Button, Input, InputGroup, FormGroup, Form, Label } from 'reactstrap';
 
 import Select from 'react-select';
+
+import axios from 'axios';
 
 class Register extends Component {
     constructor(props) {
@@ -43,8 +45,27 @@ class Register extends Component {
         }
     }
 
-    PAY = () => {
-        alert('Payment Gateway is currently busy . Please try again after some time');
+    PAY = async () => {
+        const response = await axios.post(
+            "http://localhost:5000/register",
+            {
+                student_name: this.state.student_name,
+                college_name: this.state.college_name,
+                college_id: this.state.college_id,
+                department: this.state.department,
+                year: this.state.year,
+                mobile: this.state.mobile,
+                email: this.state.email,
+                items: this.state.items,
+            },
+            { }
+        );
+        console.log(response.data);
+        let dat = response.data;
+        if(dat.status===201){
+            window.location = dat.url;
+        }
+
         return false;
     }
 
@@ -102,7 +123,7 @@ class Register extends Component {
                     <div className="mt">REGISTRATION</div>
                 </div>
                 <div className="e-c">
-                    <div className="blog-slider events-box" style={{ backgroundColor: 'transparent' }}>
+                    <div className="regbox events-box" style={{ backgroundColor: 'transparent' }}>
                         <Row>
                             <Col md={{ size: 8, offset: 2 }}>
                                 <Card body style={{ backgroundColor: '#F2E3E7', borderColor: '#333' }}>
@@ -112,13 +133,13 @@ class Register extends Component {
                                             <Col md={6}>
                                                 <FormGroup>
                                                     <Label for="fname">Student Name (*)</Label>
-                                                    <Input value={this.state.fname} onChange={this.handleChange} type="text" name="fname" id="fname" placeholder="Student Name" />
+                                                    <Input value={this.state.student_name} onChange={this.handleChange} type="text" name="student_name" id="fname" placeholder="Student Name" />
                                                 </FormGroup>
                                             </Col>
                                             <Col md={6}>
                                                 <FormGroup>
                                                     <Label for="lname">College Name (*)</Label>
-                                                    <Input value={this.state.lname} onChange={this.handleChange} type="text" name="lname" id="lname" placeholder="College Name" />
+                                                    <Input value={this.state.college_name} onChange={this.handleChange} type="text" name="college_name" id="lname" placeholder="College Name" />
                                                 </FormGroup>
                                             </Col>
                                         </Row>
@@ -126,7 +147,7 @@ class Register extends Component {
                                             <Col md={6}>
                                                 <FormGroup>
                                                     <Label>Registration Number (*)</Label>
-                                                    <Input type="text" name="reg" value={this.state.college_id} />
+                                                    <Input type="text" name="college_id" placeholder="Registration Number" onChange={this.handleChange} value={this.state.college_id} />
                                                 </FormGroup>
                                             </Col>
                                             <Col md={6}>
@@ -195,7 +216,7 @@ class Register extends Component {
                                         <Row>
                                             <Col md={{ size: 6, offset: 3 }}>
                                                 <small style={{ color: 'red' }}>* Discounts will be refunded on the day of the event</small><br />
-                                                {am === 0 ? <Button onClick={this.PAY} color="primary" disabled className="btn-block">Pay ₹ - {am}</Button> : <Button onClick={this.preview} color="primary" className="btn-block">Pay ₹ - {am}</Button>}
+                                                {am === 0 ? <Button onClick={this.PAY} color="primary" disabled className="btn-block">Pay ₹ - {am}</Button> : <Button onClick={this.PAY} color="primary" className="btn-block">Pay ₹ - {am}</Button>}
 
                                             </Col>
                                         </Row>
