@@ -15,11 +15,15 @@ const navs = [
         nav_link: '/workshops',
     },
     {
-        nav_name: 'About US',
+        nav_name: 'About Us',
         nav_link: '/about',
     },
     {
-        nav_name: 'Sponsors',
+        nav_name: 'Contact Us',
+        nav_link: '/contact',
+    },
+    {
+        nav_name: 'Our Sponsors',
         nav_link: '/sponsors',
     },
 ]
