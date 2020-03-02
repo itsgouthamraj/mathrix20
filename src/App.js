@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Register from './components/Register';
 import About from './components/About';
 import Sponsor from './components/Sponsors';
+import Payment from './components/Payment';
 
 class App extends Component {
 
@@ -50,6 +51,7 @@ class App extends Component {
                     <Route path="/contact" component={Contact} exact />
                     <Route path="/about" component={About} exact />
                     <Route path="/sponsors" component={Sponsor} exact />
+                    <Route path="/payment" component={Payment} exact />
                 </Switch>
 
             </>
