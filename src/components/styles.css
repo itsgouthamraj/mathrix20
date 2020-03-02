@@ -103,7 +103,7 @@ span {
 .e-c{
     text-align: center;
     position: absolute;
-
+    z-index: inherit;
     width: 100%;
     height: 100%;
     display: flex;
@@ -114,6 +114,13 @@ span {
     font-family: 'Anton', sans-serif;
     font-size: 85px;
     color: white;
+    text-align: center;
+}
+
+.mt2{
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    color: #fc0;
     text-align: center;
 }
 
@@ -155,7 +162,13 @@ span {
     max-height:15cm;
     max-width:15cm;
     width: 45%;
-    height: 45%;
+    height: 43%;
+}
+
+.sponsors{
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 
 
@@ -207,10 +220,23 @@ span {
     .efix{
         visibility: hidden;
     }
+    
+.mt{
+
+    font-size: 65px;
+    
+}
+
+
+
 
  }
 
  .r-in{
      color: black;
      z-index: 9999999999;
+ }
+
+ .contact{
+     font-size: 40px;
  }

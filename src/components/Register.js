@@ -12,34 +12,35 @@ class Register extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            student_name: 'hh'
+            student_name: 'hhF'
         }
     }
 
     handleChange = e => {
         this.setState({
-            [e.target.name]:e.target.value
+            [e.target.name]: e.target.value
         })
     }
 
     render() {
         return (
             <>
-            <div className="efix">
-            <div className="mt">REGISTRATION</div>
-          </div>
-            <div className="e-c">
 
-                    <Col xs={12} md={{ size: 6, offset: 3 }}>
-                        <Form>
-                            <FormGroup>
-                                <Label>Name *</Label>
-                                <Input type="text" name="student_name" className="r-in" onChange={this.handleChange} value={this.state.student_name} placeholder="Enter your name" />
-                            </FormGroup>
-                        </Form>
-                    </Col>
+                <div className="efix">
+                <div className="mt">REGISTRATION</div>
+                </div>
 
-            </div>
+
+
+                <div className="e-c">
+                    <Form>
+                        <FormGroup>
+                            <Label style={{ color: 'black' }}>Name *</Label>
+                            <Input type="text" name="student_name" value={this.state.name} onChange={this.handleChange} />
+                        </FormGroup>
+                    </Form>
+                </div>
+
             </>
         )
     }

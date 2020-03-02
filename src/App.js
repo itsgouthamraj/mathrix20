@@ -6,7 +6,8 @@ import { Switch, Route, withRouter } from 'react-router-dom';
 import Workshop from './components/Workshop';
 import Contact from './components/Contact';
 import Register from './components/Register';
-
+import About from './components/About';
+import Sponsor from './components/Sponsors';
 
 class App extends Component {
 
@@ -47,6 +48,8 @@ class App extends Component {
                     <Route path="/workshops" component={Workshop} exact />
                     <Route path="/register" component={Register} exact />
                     <Route path="/contact" component={Contact} exact />
+                    <Route path="/about" component={About} exact />
+                    <Route path="/sponsors" component={Sponsor} exact />
                 </Switch>
 
             </>

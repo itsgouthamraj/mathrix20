@@ -3,12 +3,24 @@ import { Container, Row, Col } from 'reactstrap';
 import { withRouter } from 'react-router-dom';
 const navs = [
     {
+        nav_name: 'Home',
+        nav_link: '/',
+    },
+    {
         nav_name: 'Events',
         nav_link: '/events',
     },
     {
         nav_name: 'Workshops',
         nav_link: '/workshops',
+    },
+    {
+        nav_name: 'About US',
+        nav_link: '/about',
+    },
+    {
+        nav_name: 'Sponsors',
+        nav_link: '/sponsors',
     },
 ]
 

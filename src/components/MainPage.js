@@ -10,7 +10,9 @@ const MainPage = () => {
                     <img alt="mathrix header" src={logo} className="lheader" height={300} />
                 </div>
                 <div className="mtext">
-                    <div className="mt">MATHRIX</div>
+                    <div className="mt">MATHRIX'20</div>
+                    <div className="mt2">35th Edition</div>
+                    
                 </div>
             </div>
             <MarchAnna />
