@@ -22,9 +22,8 @@ export default class Payment extends Component {
         }
     }
     componentDidMount() {
-        let prid = req.query.payment_request_id;
-        let pid = req.query.payment_id;
-        let pstat = req.query.payment_status;
+        let {prid,pid,pstat} = this.props.location.query;
+        
         this.verifyPayment(prid, pid, pstat);
     }
     render() {
