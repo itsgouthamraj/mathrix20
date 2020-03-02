@@ -27,6 +27,8 @@ export default class Payment extends Component {
         this.verifyPayment(prid, pid, pstat);
     }
     render() {
-        <div></div>
+        return (
+            <div>hi</div>
+        )
     }
 }
