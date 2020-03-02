@@ -1,19 +1,11 @@
 import React, { Component } from "react";
 import '../styles/Deck.css';
-import btc from "../assets/btc.png.png";
-import brainstorm from "../assets/brain.png";
-import cmatch from "../assets/cmath.png";
-import treasure from "../assets/treasure.png";
-import quiz from "../assets/quiz.png";
-import relay from "../assets/relay.png";
-import sherlock from "../assets/sherlock.png";
-import sudoku from "../assets/sudoku.png";
 import EventInfo from "./EventInfo";
 const events = [
   {
     name: 'Code Relay',
     description: "Attention geeks out there! It's a coding event with a pinch of fun. Get ready to solve our questions in a relay trying to cope with the flow. You might know what your friends think. Come as a team of three, we will set you on track.",
-    image: relay,
+    image: 'https://mathrixt20.s3.ap-south-1.amazonaws.com/web_coderelay+(1).png',
     category: 'Tech',
     format: {
       rounds: 1,
@@ -39,7 +31,7 @@ const events = [
   {
     name: 'BrainStorm',
     description: "Brainstorming is a nexus of ideas. An idea can turn to dust or magic depending on the talent that rubs against it. Get ready with your ideas and make a product and say why it is the best with the goal to forge the product that contributes to welfare of the society.",
-    image: brainstorm,
+    image: 'https://mathrixt20.s3.ap-south-1.amazonaws.com/brainstorm+(1)+(1).png',
     category: 'Tech',
     format: {
       rounds: 2,
@@ -68,7 +60,7 @@ const events = [
   {
     name: 'Sherlock',
     description: "There is nothing more deceptive than an obvious fact. Come with your Watson. We have an interesting case to solve, Sherlock. Remain focused and have presence of mind.",
-    image: sherlock,
+    image: 'https://mathrixt20.s3.ap-south-1.amazonaws.com/Newsherlk_web+(1)+(1).png',
     category: 'Tech',
     format: {
       rounds: 2,
@@ -95,7 +87,7 @@ const events = [
   }, {
     name: 'Beat the Clock',
     description: "Are you good at turning caffeine to code? Then here is an event for you. Get ready with your coffee we will make code out of it. Come with an efficient code, crack it. You have got to BEAT THE CLOCK!!",
-    image: btc,
+    image: 'https://mathrixt20.s3.ap-south-1.amazonaws.com/beat+d+clock+(1)+(1).png',
     category: 'Tech',
     format: {
       rounds: 2,
@@ -126,7 +118,7 @@ const events = [
   {
     name: 'Math Quiz',
     description: '"Mathematics is the music of reason". Solving the quiz problems will restore your belief that every problem has a solution. It is a challenge to your creativity and a feast to your love for mathematics',
-    image: quiz,
+    image: 'https://mathrixt20.s3.ap-south-1.amazonaws.com/web_mathquiz+(1)+(1).png',
     category: 'Math',
     format: {
       rounds: 4,
@@ -156,7 +148,7 @@ const events = [
   {
     name: 'TREASURE HUNT',
     description: '"The essence of mathematics lies in its freedom." Come in as a team of three and find clues using general mathematics. We will make you explore the unvisited parts of your brain. Get your eyes sharp and mind ready. The fastest wins!',
-    image: treasure,
+    image: 'https://mathrixt20.s3.ap-south-1.amazonaws.com/treasure+(1)+(1).png',
     category: 'Math',
     format: {
       rounds: 1,
@@ -185,7 +177,7 @@ const events = [
   {
     name: 'Sudoku',
     description: 'Are you bored of solving sudoku in mobile phones and newspapers? It is absolutely not a thing to be gone unnoticed. We adore your talent! Come and participate. We will delight you with gifts',
-    image: sudoku,
+    image: 'https://mathrixt20.s3.ap-south-1.amazonaws.com/sudoku_web+(1).png',
     category: 'Math',
     format: {
       rounds: 1,
@@ -211,7 +203,7 @@ const events = [
   {
     name: 'CREATIVE MATH',
     description: 'Mathematics is not to make simple things complicated, but to make complicated things look simpler. Come explore the fun side of Mathematics. ',
-    image: cmatch,
+    image: 'https://mathrixt20.s3.ap-south-1.amazonaws.com/Cmath_web+(1)+(1).png',
     category: 'Math',
     format: {
       rounds: 4,
