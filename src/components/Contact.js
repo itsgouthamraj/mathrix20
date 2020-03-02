@@ -7,9 +7,9 @@ import {
 const Contact = (props) => {
     return (
         <>
-            <div className="efix">
-                <div className="mt">Contact US</div>
-            </div>
+            <div className="mobtop">
+                    <div className="mtt">CONTACT US</div>
+                </div>
             <div className="e-c">
                 <div className="blog-slider events-box">
                     <Row>

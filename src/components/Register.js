@@ -119,8 +119,8 @@ class Register extends Component {
 
         return (
             <>
-                <div className="efix">
-                    <div className="mt">REGISTRATION</div>
+                <div className="mobtop">
+                    <div className="mtt">REGISTRATION</div>
                 </div>
                 <div className="e-c">
                     <div className="regbox events-box" style={{ backgroundColor: 'transparent' }}>

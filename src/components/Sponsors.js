@@ -15,8 +15,8 @@ class Sponsor extends Component {
         console.log('Sponsor');
         return (
             <>
-                <div className="efix">
-                    <div className="mt">SPONSORS</div>
+                <div className="mobtop">
+                    <div className="mtt">SPONSORS</div>
                 </div>
                 <div className="e-c">
                     <div className="blog-slider events-box" style={{ backgroundColor: 'transparent' }}>
