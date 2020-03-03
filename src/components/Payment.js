@@ -106,7 +106,7 @@ export default class Payment extends Component {
                                 <img src={"https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=" + this.props.match.params.id + "&choe=UTF-8"} />
                             </Col></> : <div>
                                 <h1 style={{ color: 'red' }}>Payment Pending</h1>
-                                <p>Any money detucted will be tranfered to your account soon.</p>
+                                <p>Any money detucted will be transfered to your account soon.</p>
                             </div>}
                         <Col xs={12} md={{ size: 6, offset: 3 }}>
                             <h3>Venue and Timings</h3>
