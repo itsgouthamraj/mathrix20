@@ -7,7 +7,7 @@ export default class Payment extends Component {
     }
     verifyPayment = async (id) => {
         const response = await axios.post(
-            "https://mathrix.in/check",
+            "https://api.mathrix.in/check",
             {
                 fetch_id:id
             },
