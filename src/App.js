@@ -51,7 +51,7 @@ class App extends Component {
                     <Route path="/contact" component={Contact} exact />
                     <Route path="/about" component={About} exact />
                     <Route path="/sponsors" component={Sponsor} exact />
-                    <Route path="/payment" component={Payment} exact />
+                    <Route path="/payment/:id" component={Payment} exact />
                 </Switch>
 
             </>

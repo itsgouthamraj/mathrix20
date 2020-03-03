@@ -46,6 +46,10 @@ class EventInfo extends Component {
         this.props.close();
     }
 
+    OpenPay = () => {
+        window.location = "https://mathrix.in/register";
+    }
+
     render() {
 
 
@@ -132,7 +136,7 @@ class EventInfo extends Component {
                         </TabContent>
                     </ModalBody>
                     <ModalFooter>
-
+                    <Button color="primary" onClick={this.OpenPay}>Register</Button>
                     <Button color="secondary" onClick={this.toggle}>Close</Button>
                 </ModalFooter>
                 </Modal>

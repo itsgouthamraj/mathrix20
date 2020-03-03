@@ -5,13 +5,11 @@ export default class Payment extends Component {
     constructor(props) {
         super(props);
     }
-    verifyPayment = async (prid, pid, pstat) => {
+    verifyPayment = async (id) => {
         const response = await axios.post(
             "http://localhost:5000/check",
             {
-                payment_request_id:prid,
-                payment_id:pid,
-                payment_status:pstat
+                fetch_id:id
             },
             {}
         );
@@ -22,9 +20,9 @@ export default class Payment extends Component {
         }
     }
     componentDidMount() {
-        let {prid,pid,pstat} = this.props.location.query;
+        const { id } = this.props.match.params;
         
-        this.verifyPayment(prid, pid, pstat);
+        this.verifyPayment(id);
     }
     render() {
         return (

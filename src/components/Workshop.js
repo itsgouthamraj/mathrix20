@@ -64,7 +64,7 @@ class Workshops extends Component {
               <span className="blog-slider__code">{e.name}</span>
               <div className="blog-slider__title">{e.category}</div>
               <div className="blog-slider__text">{e.description}</div>
-              <a href="#" className="blog-slider__button">REGISTRATIONS OPENS SOON</a>
+              <a href="https://mathrix.in/register" className="blog-slider__button">REGISTER NOW</a>
             </div>
           </div>
         )
