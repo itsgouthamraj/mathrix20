@@ -34,13 +34,11 @@ export default class Payment extends Component {
         );
         console.log(response.data);
         let dat = response.data.stud;
-        if (dat.payment_status === true) {
+        
             this.setState({
                 details: dat
             })
-        } else {
-
-        }
+        
     }
     componentDidMount() {
         const { id } = this.props.match.params;
