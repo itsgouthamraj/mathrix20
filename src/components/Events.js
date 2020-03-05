@@ -34,15 +34,15 @@ const events = [
     image: 'https://mathrixt20.s3.ap-south-1.amazonaws.com/brainstorm+(1)+(1).png',
     category: 'Tech',
     format: {
-      rounds: 2,
+      rounds: 1,
       content: [
-        "Prelims:",
-        "Duration: 30 minutes.",
-        "It is a pen-paper round that consists of brain teasers.",
-        "Participants who score high will be shortlisted for the final round.",
-        "Finals:",
-        "Duration: 1 hour",
-        "Participants will be given a theme/topic with which they have to come up with an innovative product along with its design and working."
+        "Round : 1",
+        "Duration : 1 hour",
+        "Rules :",
+        "1. Teams will be given a common theme from which they have to come up with an innovative product idea",
+        "2. Initially, the teams will be awarded set of points",
+        "3. Auction will take place for choosing the necessities required for developing the product, using the points awarded to them",
+        "4. Winners will be chosen based on the creativity, plan and expenditure."
       ]
     },
     rules: [
