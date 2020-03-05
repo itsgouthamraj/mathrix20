@@ -15,6 +15,10 @@ const navs = [
         nav_link: '/workshops',
     },
     {
+        nav_name: 'General Rules',
+        nav_link: '/general-rules',
+    },
+    {
         nav_name: 'Register',
         nav_link: '/register',
     },
