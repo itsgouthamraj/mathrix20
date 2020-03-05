@@ -215,7 +215,7 @@ class Register extends Component {
                                         </Row>
                                         <Row>
                                             <Col md={{ size: 6, offset: 3 }}>
-                                                <small style={{ color: 'red' }}>* Discounts will be refunded on the day of the event</small><br />
+                                                <small style={{ color: 'red' }}>* Onspot registrations starts at 8 AM and finishes at 9AM</small><br />
                                                 {am === 0 ? <Button onClick={this.PAY} color="primary" disabled className="btn-block">Pay ₹ - {am}</Button> : <Button onClick={this.PAY} color="primary" className="btn-block">Pay ₹ - {am}</Button>}
 
                                             </Col>
