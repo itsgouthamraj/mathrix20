@@ -67,7 +67,7 @@ export default class Payment extends Component {
                     <Col className="text-center" xs={12} md={{ offset: 3, size: 6 }}>
                         {d.payment_status ? <><div style={{ paddingTop: '30px' }}>
                             <h1 style={{ color: 'green' }}>Payment Success</h1>
-                            <p style={{ textAlign: "left", padding: "5px" }}> Hi , {d.student_name} thank you for registering in Mathrix'20. We successfully received your payment of ₹ {d.amount} and will send the confirmation mail shortly. </p>
+                            <p style={{ textAlign: "left", padding: "5px" }}> Hi , {d.student_name} thank you for registering in Mathrix'20. We successfully received your payment of ₹ {d.amount} . Take the screenshot of this page. </p>
                             <h2>Subscribed Items</h2>
                             <div className="table-responsive">
                                 <table className="table">
