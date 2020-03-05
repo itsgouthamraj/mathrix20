@@ -290,6 +290,9 @@
 		 height: 11px;
 		 width: 30px;
 	}
+	.blog-slider{
+		overflow-y: scroll;
+	}
 	.blog-slider__content {
 		overflow-y: scroll;
    }

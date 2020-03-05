@@ -13,7 +13,7 @@ const GenRules = (props) => {
             <div className="e-c">
                 <div className="blog-slider events-box">
                     <Row>
-                        <Col xs={12} md={12} style={{textAlign:'left'}}>
+                        <Col xs={12} md={12} style={{textAlign:'left',overflowY:'scroll'}}>
                             <ul>
                                 <li>Spot Registration will be done between 8.00 am and 9.30 am on 9th March, 2020.</li>
                                 <li>Registration fee is Rs.150 per student.</li>

@@ -13,7 +13,7 @@ const Contact = (props) => {
             <div className="e-c">
                 <div className="blog-slider events-box">
                     <Row>
-                        <Col xs={12} md={12} style={{overflowX:'scroll'}}>
+                        <Col xs={12} md={12} style={{overflowY:'scroll'}}>
                             <h3><strong>Secretaries</strong></h3>
                             <p className=""><i className="fas fa-user-circle	"></i>{' '}Meera R - <a href="tel:7448567788">7448567788</a></p>
                             <p className=""><i className="fas fa-user-circle	"></i>Goutham Raj - <a href="tel:7358551069">{' '}7358551069</a></p>
