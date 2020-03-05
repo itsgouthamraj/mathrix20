@@ -124,16 +124,14 @@ const events = [
       rounds: 4,
       content: [
         "Prelims : (Pen and Paper)",
-        "Multiple choice questions with negative marking..",
-        "Round 1 : (Rapid Fire Round)",
-        "The teams are supposed to answer as many questions in 90 seconds.",
-        "Round 2 : (Who am I??)",
-        "Identifying the answer based on the clues in seconds.",
-        "Round 3 : (Finale)",
-        "Questions will be asked from various mathematical concepts.",
+        "Multiple choice questions",
+        "Finals comprises of various surprising rounds",
+
+        
       ]
     },
     rules: [
+      "Maximum 2 teams per college is allowed",
       "Maximum 2-3 per team. ",
       "Usage of mobile phones, electronic gadgets during the event is not allowed.",
       "Any kind of malpractice will lead to disqualification.",
@@ -154,19 +152,19 @@ const events = [
       rounds: 1,
       content: [
         "Round 1",
-        "Duration: 1 hour",
+        "Duration: 50 minutes",
         "The team should find answers using the clues given.",
         "Each team will be given an assistant to guide through the campus."
       ]
     },
     rules: [
       "Three participants per team. ",
-      "Only one tea per shift is allowed.",
+      "Only one team per shift is allowed.",
       "The participants have to keep all the clue chits carefully until the end of the game.",
       "If the team fails to show all the clue chits by the end of the game, the team will be disqualified.",
       "Usage of mobile phones, electronic gadgets during the event is not allowed.",
       "Any kind of malpractice will lead to disqualification.",
-      "The organizer’s decision is final."
+      "The decision of the organising committee will be final."
     ],
     contact: [
       { name: 'Priyanka  ', mob: '8220877853' },
@@ -183,7 +181,9 @@ const events = [
       rounds: 1,
       content: [
         "Round 1",
-        "Duration: 1 hour",
+        "Duration: 45 minutes",
+        "1.Each participant is expected to solve an easy, medium and a hard level puzzle ",
+        "2.Points will be given according to the difficulty level of the puzzle "
       ]
     },
     rules: [
@@ -208,14 +208,16 @@ const events = [
     format: {
       rounds: 4,
       content: [
+        "Duration : 20 + 60 minutes",
         "Prelims : (Pen and Paper)",
         "Objective type with 30 minutes duration.",
         "Round 1 : (DUMB CHAMBERS)",
         "One member miming various mathematical terms to his/her team members within the specified time limit.",
-        "Round 2 : (CONNECTIONS)",
-        "A Mathematical term will be denoted with pictures. Contestants are expected to guess the correct term in one attempt.",
-        "Round 3 : (PICTIONARY)",
+        "Round 2 : (PICTIONARY)",
         "An object will be given. One contestant must describe the object using mathematical shapes. Other contestants must guess the object.",
+        "Round 3 : (CONNECTIONS)",
+        "A Mathematical term will be denoted with pictures. Contestants are expected to guess the correct term in one attempt.",
+        
       ]
     },
     rules: [

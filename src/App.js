@@ -9,6 +9,7 @@ import Register from './components/Register';
 import About from './components/About';
 import Sponsor from './components/Sponsors';
 import Payment from './components/Payment';
+import GenRules from './components/GenRules';
 
 class App extends Component {
 
@@ -52,6 +53,7 @@ class App extends Component {
                     <Route path="/about" component={About} exact />
                     <Route path="/sponsors" component={Sponsor} exact />
                     <Route path="/payment/:id" component={Payment} exact />
+                    <Route path="/general-rules" component={GenRules} exact />
                 </Switch>
 
             </>
