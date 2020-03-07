@@ -128,7 +128,7 @@ class Register extends Component {
                             <Col md={{ size: 8, offset: 2 }}>
                                 <h2 className="text-center text-white">
                                     <p>Online Registrations are closed.</p>
-                                    <p>Students can register onspot </p>
+                                    <p>Interested Students can register at onspot Registration Desks.</p>
                                 </h2>
                                 {/* <Card body style={{ backgroundColor: '#F2E3E7', borderColor: '#333' }}>
                                     <CardHeader tag="h3" className="text-center">Student Registration</CardHeader>
