@@ -126,7 +126,10 @@ class Register extends Component {
                     <div className="regbox events-box" style={{ backgroundColor: 'transparent' }}>
                         <Row>
                             <Col md={{ size: 8, offset: 2 }}>
-                                <Card body style={{ backgroundColor: '#F2E3E7', borderColor: '#333' }}>
+                                <h2 className="text-center">
+                                    Registrations are closed
+                                </h2>
+                                {/* <Card body style={{ backgroundColor: '#F2E3E7', borderColor: '#333' }}>
                                     <CardHeader tag="h3" className="text-center">Student Registration</CardHeader>
                                     <CardBody>
                                         <Row form>
@@ -221,7 +224,7 @@ class Register extends Component {
                                             </Col>
                                         </Row>
                                     </CardBody>
-                                </Card>
+                                </Card> */}
                             </Col>
                         </Row>
                     </div>
